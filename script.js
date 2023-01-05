@@ -8,7 +8,6 @@ console.log(hours, minutes, seconds);
 console.log(span);
 console.log(clock);
 console.log(new Date());
-
 function runClock() {
   let currentTime = new Date();
   console.log(currentTime);
@@ -21,11 +20,11 @@ function runClock() {
   if (hrs > 12) {
     hrs -= 12;
     txt = "PM";
-  } else if (hrs === 12 && !isSecondTime) {
+  } else if (hrs === 00 && !isSecondTime) {
     hrs = 12;
     txt = "AM";
     isSecondTime = true;
-  } else if (hrs === 12 && isSecondTime) {
+  } else if (hrs === 00 && isSecondTime) {
     hrs = 12;
     txt = "PM";
     isSecondTime = false;
